@@ -1,0 +1,4 @@
+opentracing
+pyramid
+boto3
+scrapy

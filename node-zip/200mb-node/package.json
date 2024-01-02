@@ -1,0 +1,20 @@
+{
+  "name": "150mb-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.12",
+    "date-fns": "^2.30.0",
+    "imdb-data": "^1.0.0",
+    "mathjax": "^3.2.2",
+    "moby": "^1.1.2"
+  }
+}

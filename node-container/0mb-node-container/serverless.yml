@@ -1,0 +1,16 @@
+service: service-0mb-node-container
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  architecture: arm64
+  ecr:
+    images:
+      appimage:
+        path: ./
+
+functions:
+  hello:
+    image:
+      name: appimage
+    url: true

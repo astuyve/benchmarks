@@ -1,0 +1,17 @@
+service: service-0mb-python-container
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  ecr:
+    images:
+      appimage:
+        path: ./
+        platform: linux/amd64
+
+
+functions:
+  hello:
+    image:
+      name: appimage
+    url: true

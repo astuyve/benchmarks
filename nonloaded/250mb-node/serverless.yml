@@ -1,0 +1,15 @@
+service: unloaded-250mb-node
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  timeout: 30
+
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          method: get
+          path: /hello

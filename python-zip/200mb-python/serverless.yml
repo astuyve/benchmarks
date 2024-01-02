@@ -1,0 +1,21 @@
+
+service: service-200mb-python
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.11
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
+functions:
+  hello:
+    handler: handler.hello
+    events:
+      - httpApi:
+          method: get
+          path: /hello
+
+plugins:
+  - serverless-python-requirements
